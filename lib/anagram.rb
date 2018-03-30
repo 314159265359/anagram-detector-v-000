@@ -9,11 +9,12 @@ class Anagram
   #  anagrams  =  @word.chars.to_a.permutation.map(&:join).uniq.each {|anag|}
   #  list.select{|anagram| anagrams.include?(anagram)}
   result = []
+  matcher = @word.split("").sort
   list.each do |anagram|
-    anag = anagram.split(',')
-    sanag = anag.sort
-    if sanag == @word.sort
-      result << sanag
+    anag = anagram.split("").sort
+    #sanag = anag.sort
+    if anag == matcher
+      result << anag
     end
   end
   result
