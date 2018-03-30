@@ -6,8 +6,7 @@ class Anagram
  end
 
  def match(list)
-   result = list.detect{|anagram| @word == anagram}
-   result
+   list.detect{|anagram| @word == anagram}
  end
 
 end
