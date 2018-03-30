@@ -7,7 +7,7 @@ class Anagram
 
  def match(list)
    list.select{|anagram| @word == anagram}
-   @word.chars.to_a.permutation.map(&:join).uniq.each do |anagram|
+   @word.chars.to_a.permutation.map(&:join).uniq.each do |anag|
   puts anagram
  end
 
