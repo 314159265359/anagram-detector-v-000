@@ -14,7 +14,7 @@ class Anagram
     anag = anagram.split("").sort
     #sanag = anag.sort
     if anag == matcher
-      result << anag.join("")
+      result << anagram
     end
   end
   result
