@@ -12,7 +12,6 @@ class Anagram
   matcher = @word.split("").sort
   list.each do |anagram|
     anag = anagram.split("").sort
-    #sanag = anag.sort
     if anag == matcher
       result << anagram
     end
